@@ -1,0 +1,26 @@
+{
+  "name": "redis-examples",
+  "version": "1.0.0",
+  "description": "Examples of how to use Redis with different data types and patterns",
+  "scripts": {
+    "start:redis": "docker-compose up -d",
+    "stop:redis": "docker-compose down",
+    "test": "jest"
+  },
+  "keywords": [
+    "redis",
+    "examples",
+    "node"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "redis": "^4.6.7"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["./jest.setup.js"]
+  }
+}
